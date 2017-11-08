@@ -10,9 +10,8 @@
 ## npm初始化
 ```
 $ 下载项目在当前项目目录下打开命令行工具
-![图片](http://osk1hpe2y.bkt.clouddn.com/17-11-8/27256342.jpg)
 ```
-
+![图片](http://osk1hpe2y.bkt.clouddn.com/17-11-8/27256342.jpg)
 
 ##### package.json内容如下
 
