@@ -80,4 +80,4 @@ $2. 命令行工具执行gulp dev监察代码改动，如果有报错，重新�
 $1. 用手机通过usb线连接电脑，打开hbuilder IDE的真机调试，可以查看数据输出和代码修改结果
 ```
 
-![图片](http://osk1hpe2y.bkt.clouddn.com/17-11-8/8861471.jpg)
+![图片](http://osk1hpe2y.bkt.clouddn.com/17-11-8/78948281.jpg)
