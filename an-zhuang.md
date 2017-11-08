@@ -7,7 +7,7 @@
 - app打包完全是基于manifest.json配置文件，它主要是用来配置app的基本信息（版本号、appid等）、图标(app的应用图标)、sdk配置、模块权限配置、页面引用关系、代码视图，具体参看dcloud提供的[文档](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/94)。
 
 
-## npm初始化
+### npm初始化
 ```
 $1. 下载项目在当前项目目录下打开命令行工具输入
 
@@ -27,70 +27,53 @@ $2. 执行编译输入
 
 ```
 {
-	"name": "Fans",
-	"version": "1.0.0",
-	"description": "粉丝煲",
-	"main": "js/entrance.js",
-	"keywords": "粉丝煲",
-	"homepage": "",
-	"bugs": {
-		"url": "https://github.com/yujinjin/fans/issues",
-		"email": "yujinjin9@126.com"
-	},
-	"author": {
-		"name": "jinyu",
-		"email": "yujinjin9@126.com",
-		"url": "https://github.com/yujinjin"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yujinjin/fans.git"
-	},
-	"scripts": {
-		"R_DEV": "set NODE_RUN=1&&webpack-dev-server --progress --watch --inline --host=0.0.0.0  --port 8083",
-		"B_DEV":"set NODE_ENV=dev&set NODE_RUN=0&webpack --progress --hide-modules",
-		"lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
-	},
-	"dependencies": {
-		"vue": "^2.1.8",
-		"vue-resource": "^1.0.3",
-		"vue-router": "^2.0.1",
-		"vue-html-loader": "1.2.3",
-    	"vue-loader": "10.0.0",
-    	"vue-style-loader": "^1.0.0",
-    	"vue-template-compiler": "^2.1.0"
-	},
-	"devDependencies": {
-		"vuex": "^2.0.0",
-		"autoprefixer": "^6.4.0",
-	    "babel-core": "^6.0.0",
-	    "babel-eslint": "^7.0.0",
-	    "babel-loader": "^6.0.0",
-	    "babel-plugin-transform-runtime": "^6.0.0",
-	    "babel-preset-es2015": "^6.0.0",
-	    "babel-preset-stage-2": "^6.0.0",
-	    "babel-register": "^6.0.0",
-	    "babel-polyfill": "^6.22.0",
-		"cross-env": "^1.0.6",
-		"css-loader": "^0.25.0",
-		"less": "^2.7.1",
-		"less-loader": "^2.2.3",
-		"file-loader": "^0.9.0",
-		"html-loader": "^0.4.4",
-		"html-webpack-plugin": "^2.24.1",
-		"jshint": "^2.9.4",
-		"jshint-loader": "^0.8.3",
-		"style-loader": "^0.13.1",
-		"url-loader": "^0.5.7",
-		"extract-text-webpack-plugin": "^2.0.0-beta.4",
-		"webpack": "^2.1.0-beta.25",
-		"webpack-dev-server": "^2.1.0-beta.10",
-		"webpack-require-http": "^0.4.0"
-	},
-	
-	"engines": {
-		"node": ">=5.0.0",
-		"npm": ">=3.3.6"
-	}
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.4",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^2.0.0",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.0.1",
+    "minimist": "^1.2.0",
+    "postcss-loader": "^2.0.6",
+    "pug-loader": "^2.3.0",
+    "stream-combiner2": "^1.1.1",
+    "stylus-loader": "^3.0.1",
+    "vinyl-named": "^1.1.0",
+    "vue-loader": "^12.2.1",
+    "vue-template-compiler": "^2.3.4",
+    "webpack": "^2.6.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "browserslist": [
+    "Android >= 4.4.3",
+    "iOS >= 8"
+  ],
+  "dependencies": {
+    "axios": "^0.16.2",
+    "vue": "^2.3.4"
+  }
 }
+
+## 调试
+- chrome浏览器pc端调试和hbuilder真机调试，chrome调试比较方便，以下只以chrome浏览器讲解
+
+### pc端开发调试
+```
+$1. 下载完所有依赖执行编译后打开build文件夹下login/login.html页面，打开chrome F12按键可以打开开发工具查看html的dom元素和样式以及js代码
+$2. 命令行工具执行gulp dev监察代码改动，如果有报错，重新打开当前文件目录执行gulp dev，修改代码后，刷新页面就可以查看改动
+```
+### 移动端开发调试
+```
+$1. 用手机通过usb线连接电脑，打开hbuilder IDE的真机调试，可以查看数据输出和代码修改结果
+```
+![图片](http://osk1hpe2y.bkt.clouddn.com/17-11-8/8861471.jpg)
