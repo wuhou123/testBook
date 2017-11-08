@@ -4,7 +4,7 @@
 
 app打包技术是用到了eclipse工具打包成APP，本项目使用了原生设备的的拍照、定位功能和原生插件（信鸽推送）。对于app的升级是html5资源整个APP更新。这些都是[dcloud](http://www.dcloud.io/index.html)提供一整套技术解决方案。
 
-本项目只是一个技术框架，需要开发者了解基本的html5、css3、js、vue、gulp的知识。
+本项目需要开发者了解基本的html5、css3、js、vue、gulp的知识。
 
 **说明：** 开发工具用到dcloud的Hbuilder IDE，eclipse IDE，打包工程文件有固定的文件目录一般不需要增改，打包流程[点击这个](http://http://ask.dcloud.net.cn/article/38/)。
 
