@@ -11,7 +11,7 @@
 ```
 $ 下载项目在当前项目目录下打开命令行工具
 ```
-![图片][./img/anzhuang1.png]
+![图片](./img/anzhuang1.png)
 
 ##### package.json内容如下
 
