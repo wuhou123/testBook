@@ -3,7 +3,7 @@
 * [前言](README.md)
   * [介绍](jie-shao.md)
   * [需要看的框架文档](xu-yao-kan-de-kuang-jia-wen-dang.md)
-* [安装](an-zhuang.md)
+* [安装与调试](an-zhuang.md)
 * [开发环境依赖模块说明](kai-fa-huan-jing-yi-lai-mo-kuai-shuo-ming.md)
 * [项目目录说明](xiang-mu-mu-lu-shuo-ming.md)
 * [发布运行程序](fa-bu-yun-xing.md)
