@@ -67,7 +67,7 @@ $2. 执行编译输入
 
 
 ## 调试
-- chrome浏览器pc端调试和hbuilder真机调试，chrome调试比较方便，以下只以chrome浏览器讲解
+- chrome浏览器pc端调试和hbuilder真机调试，chrome调试比较方便(性能及查看代码显示比较好)，以下只以chrome浏览器讲解
 
 ### pc端开发调试
 ```
