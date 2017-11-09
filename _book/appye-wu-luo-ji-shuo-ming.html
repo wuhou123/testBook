@@ -1,0 +1,536 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>App业务逻辑说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="appda-bao-ji-jie-kou-diao-yong.html" />
+    
+    
+    <link rel="prev" href="zu-jian-shuo-ming.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="jie-shao.html">
+            
+                <a href="jie-shao.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="xu-yao-kan-de-kuang-jia-wen-dang.html">
+            
+                <a href="xu-yao-kan-de-kuang-jia-wen-dang.html">
+            
+                    
+                    需要看的框架文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="an-zhuang.html">
+            
+                <a href="an-zhuang.html">
+            
+                    
+                    安装与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="kai-fa-huan-jing-yi-lai-mo-kuai-shuo-ming.html">
+            
+                <a href="kai-fa-huan-jing-yi-lai-mo-kuai-shuo-ming.html">
+            
+                    
+                    开发环境依赖模块说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="xiang-mu-mu-lu-shuo-ming.html">
+            
+                <a href="xiang-mu-mu-lu-shuo-ming.html">
+            
+                    
+                    项目目录说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="fa-bu-yun-xing.html">
+            
+                <a href="fa-bu-yun-xing.html">
+            
+                    
+                    发布运行程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="gou-jian-gong-ju-pei-zhi.html">
+            
+                <a href="gou-jian-gong-ju-pei-zhi.html">
+            
+                    
+                    构建工具配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="appji-zhu-kuang-jia-shuo-ming.html">
+            
+                <a href="appji-zhu-kuang-jia-shuo-ming.html">
+            
+                    
+                    App技术框架说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="apppei-zhi-yi-ji-qi-ta-fang-fa.html">
+            
+                <a href="apppei-zhi-yi-ji-qi-ta-fang-fa.html">
+            
+                    
+                    App配置以及其他方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="zu-jian-shuo-ming.html">
+            
+                <a href="zu-jian-shuo-ming.html">
+            
+                    
+                    组件说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="appye-wu-luo-ji-shuo-ming.html">
+            
+                <a href="appye-wu-luo-ji-shuo-ming.html">
+            
+                    
+                    App业务逻辑说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="appda-bao-ji-jie-kou-diao-yong.html">
+            
+                <a href="appda-bao-ji-jie-kou-diao-yong.html">
+            
+                    
+                    App打包及接口调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >App业务逻辑说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="app&#x81EA;&#x5DF1;&#x7684;&#x4E1A;&#x52A1;">app&#x81EA;&#x5DF1;&#x7684;&#x4E1A;&#x52A1;</h2>
+<p>&#x76EE;&#x524D;app&#x81EA;&#x5DF1;&#x6240;&#x7279;&#x6709;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x6709;&#x81EA;&#x52A8;&#x767B;&#x5F55;&#x3001;&#x767B;&#x51FA;&#x3001;&#x8BBE;&#x5907;&#x53F7;&#x7C7B;&#x578B;&#x5224;&#x65AD;&#x3001;&#x7AD9;&#x70B9;&#x672C;&#x5730;&#x5B58;&#x50A8;&#x7B49;&#x4E00;&#x4E9B;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>//&#x8BBE;&#x5907;&#x624B;&#x673A;&#x4FE1;&#x606F;&#x672C;&#x5730;&#x5B58;&#x50A8;&#xFF0C;&#x5207;&#x5165;&#x540E;&#x53F0;&#x548C;&#x524D;&#x53F0;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#xFF0C;&#x7F51;&#x7EDC;&#x76D1;&#x542C;&#x53D8;&#x5316;
+        mui.plusReady(function() {
+            plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
+                var info = {
+                    model: plus.device.model, //&#x624B;&#x673A;&#x578B;&#x53F7;
+                    vendor: plus.device.vendor, //&#x624B;&#x673A;&#x5382;&#x5BB6;
+                    osName: plus.os.name, //&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x540D;&#x79F0;
+                    osVersion: plus.os.version, //&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;
+                    osLanguage: plus.os.language, //&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;
+                    appid: plus.runtime.appid, //&#x7A0B;&#x5E8F;&#x5305;&#x540D;
+                    appName: wgtinfo.name, //&#x7A0B;&#x5E8F;&#x540D;&#x79F0;
+                    appVersion: wgtinfo.version, //&#x7A0B;&#x5E8F;&#x7248;&#x672C;&#x53F7;
+                    appDescription: wgtinfo.description, //&#x7A0B;&#x5E8F;&#x7B80;&#x4ECB;
+                    uuid:plus.device.uuid
+                    //clientid: plus.push.getClientInfo().clientid, //&#x63A8;&#x9001;&#x670D;&#x52A1;&#x4EE4;&#x724C;&#xFF08;&#x8BBE;&#x5907;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF09;
+                };
+                localStorage.version = wgtinfo.version;
+                localStorage.setItem(&apos;info&apos;, JSON.stringify(info));
+                if (cnt.cnt == 0 || localStorage.lastVersion == localStorage.version) {
+                    vm.go();
+                } else
+                    vm.getIntro();
+            });
+            //&#x65E0;&#x7F51;&#x7EDC;&#x63D0;&#x793A;
+            document.addEventListener(&apos;netchange&apos;, function() {
+                var nt = plus.networkinfo.getCurrentType();
+                switch(nt) {
+                    case plus.networkinfo.CONNECTION_ETHERNET:
+                    case plus.networkinfo.CONNECTION_WIFI:
+                    case plus.networkinfo.CONNECTION_CELL2G:
+                    case plus.networkinfo.CONNECTION_CELL3G:
+                    case plus.networkinfo.CONNECTION_CELL4G:
+                        break;
+                    default:
+                        //&#x9632;&#x6B62;&#x591A;&#x4E2A;&#x51FA;&#x73B0;&#x8B66;&#x544A;
+                        if (!localStorage.alerting) {
+                            localStorage.alerting = &apos;true&apos;;
+                            mui.alert(&apos;&#x5F53;&#x524D;&#x65E0;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#xFF0C;&#x60A8;&#x5C06;&#x65E0;&#x6CD5;&#x6536;&#x5230;&#x63A8;&#x9001;&#x544A;&#x8B66;&apos;, &apos;&#x8B66;&#x544A;&apos;, &apos;&#x6211;&#x77E5;&#x9053;&#x4E86;&apos;, function() {
+                                localStorage.removeItem(&apos;alerting&apos;);
+                            });
+                        }
+                        break;
+                }
+            }, false);
+            app.log(&apos;&#x542F;&#x52A8;&#x8017;&#x8D39;&#x65F6;&#x95F4;&#xFF1A;&apos; + plus.runtime.launchLoadedTime);
+            //&#x5207;&#x5165;&#x540E;&#x53F0;&#x4E8B;&#x4EF6;
+            document.addEventListener(&apos;pause&apos;, function() {
+                //&#x53D1;&#x9001;&#x6570;&#x636E;start
+                if(localStorage.appId == &apos;com.birdsh.cheways.dys&apos;) {
+                    logeye.emit({
+                        events: &apos;dys_index_pause&apos;
+                    })
+                }
+                if(localStorage.appId == &apos;com.birdsh.cheways.lf&apos;) {
+                    logeye.emit({
+                        events: &apos;lf_index_pause&apos;
+                    })
+                }
+                //&#x53D1;&#x9001;&#x6570;&#x636E;end
+            }, false)
+            //&#x5207;&#x5165;&#x524D;&#x53F0;&#x4E8B;&#x4EF6;
+            document.addEventListener(&apos;resume&apos;, function() {
+                //&#x53D1;&#x9001;&#x6570;&#x636E;start
+                if(localStorage.appId == &apos;com.birdsh.cheways.dys&apos;) {
+                    logeye.emit({
+                        events: &apos;dys_index_resume&apos;
+                    })
+                }
+                if(localStorage.appId == &apos;com.birdsh.cheways.lf&apos;) {
+                    logeye.emit({
+                        events: &apos;lf_index_resume&apos;
+                    })
+                }
+                //&#x53D1;&#x9001;&#x6570;&#x636E;end
+            }, false)
+            //&#x8BBE;&#x7F6E;&#x53EA;&#x652F;&#x6301;&#x7AD6;&#x5C4F;&#x663E;&#x793A;
+            plus.screen.lockOrientation(&apos;portrait-primary&apos;);
+        });
+
+ //app&#x81EA;&#x52A8;&#x767B;&#x5F55;
+     methods: {
+        getIntro() {
+            for (var i = 1; i &lt;= cnt.cnt; i++) {
+                this.introImgs.push({src: &apos;../../special/introduce/&apos;+i+&apos;.png&apos;})
+            }
+            localStorage.lastVersion = localStorage.version;
+        },
+        go() {
+            if(localStorage.adminToken != null) {
+                mui.openWindow(pageConfig[&apos;device-list&apos;]);
+            } else if(localStorage.token != null) {
+                mui.openWindow(pageConfig[&apos;main&apos;]);
+            } else
+                mui.openWindow(pageConfig[&apos;login&apos;]);
+        }
+    }
+
+
+//&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;
+var defaultConfig = {
+    hasCare: false, //&#x662F;&#x5426;&#x6709;&#x4FDD;&#x517B;&#x8BB0;&#x5F55;
+    hasCarsPush: false, //&#x662F;&#x5426;&#x6709;&#x8F66;&#x961F;&#x63A8;&#x9001;&#x6211;&#x7684;&#x6D88;&#x606F;
+    hasMyCard: false, //&#x662F;&#x5426;&#x6709;&#x6211;&#x7684;&#x5361;&#x8BC1;
+    hasMyInsu: false, //&#x662F;&#x5426;&#x6709;&#x6211;&#x7684;&#x4FDD;&#x9669;
+    hasMyMotorcade: false,  //&#x662F;&#x5426;&#x6709;&#x6211;&#x7684;&#x8F66;&#x961F;
+    hasRenew: false, //&#x5F39;&#x51FA;&#x6846;&#x662F;&#x5426;&#x6709;&#x7EED;&#x8D39;
+    hasRenewAndDeal: false, //&#x6211;&#x7684;&#x9875;&#x9762;&#x662F;&#x5426;&#x6709;&#x53BB;&#x7EED;&#x8D39;&#x548C;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;
+    hasShare: false, //&#x662F;&#x5426;&#x6709;&#x5206;&#x4EAB;
+    hasWeiXinPay: false, //&#x662F;&#x5426;&#x6709;&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;
+    hideMyCar: false, //&#x662F;&#x5426;&#x9690;&#x85CF;&#x6211;&#x7684;&#x7231;&#x8F66;
+    hideVoltage: false,  //&#x662F;&#x5426;&#x9690;&#x85CF;&#x9996;&#x9875;&#x548C;&#x4F4D;&#x7F6E;&#x91CC;&#x7684;&#x7535;&#x538B;
+    hideInsuInPay: false,  //&#x652F;&#x4ED8;&#x548C;&#x4EA4;&#x6613;&#x8BB0;&#x5F55;&#x754C;&#x9762;&#x662F;&#x5426;&#x9690;&#x85CF;&#x4FDD;&#x9669;&#x6587;&#x5B57;
+    isMotor: false,  //&#x9996;&#x9875;&#x662F;&#x5426;&#x53EA;&#x663E;&#x793A;&#x6469;&#x6258;&#x8F66;&#x56FE;&#x6807;
+    showServiceEnd: false,  //&#x6211;&#x7684;&#x9875;&#x9762;&#x662F;&#x5426;&#x663E;&#x793A;&#x670D;&#x52A1;&#x671F;&#x6B62;
+    www: &apos;http://m.wapreach.com/GetItem?channelid=1661&amp;itemid=4920&amp;cpid=372&apos;,  //&#x5B9E;&#x65F6;&#x76D1;&#x63A7;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;
+}
+
+//app&#x9000;&#x51FA;&#x767B;&#x5F55;
+window.addEventListener(&apos;logout&apos;, function() {
+    var loginURL = &apos;../template/login.html?hideFlip=1&apos;;
+    mui.openWindow({
+        url:loginURL,
+        id: &apos;login&apos;,
+        show: {
+            aniShow: &apos;slide-in-left&apos;
+        },
+    });
+    function close(id) {
+        var wv = plus.webview.getWebviewById(id);
+        if (wv) wv.close(&apos;none&apos;);
+    }
+    close(&apos;main&apos;);
+    close(&apos;device-list&apos;);
+    close(&apos;setting&apos;);
+    close(&apos;user-info&apos;);
+    localStorage.removeItem(&apos;encrypt&apos;);
+    localStorage.removeItem(&apos;adminToken&apos;);
+    localStorage.removeItem(&apos;activateToken&apos;);
+    localStorage.removeItem(&apos;token&apos;);
+    localStorage.removeItem(&apos;user&apos;);
+    localStorage.removeItem(&apos;lastCheckPay&apos;);
+    plus.XGPush.unregister();
+});
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="zu-jian-shuo-ming.html" class="navigation navigation-prev " aria-label="Previous page: 组件说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="appda-bao-ji-jie-kou-diao-yong.html" class="navigation navigation-next " aria-label="Next page: App打包及接口调用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"App业务逻辑说明","level":"1.10","depth":1,"next":{"title":"App打包及接口调用","level":"1.11","depth":1,"path":"appda-bao-ji-jie-kou-diao-yong.md","ref":"appda-bao-ji-jie-kou-diao-yong.md","articles":[]},"previous":{"title":"组件说明","level":"1.9","depth":1,"path":"zu-jian-shuo-ming.md","ref":"zu-jian-shuo-ming.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appye-wu-luo-ji-shuo-ming.md","mtime":"2017-11-08T11:59:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-09T06:22:27.767Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

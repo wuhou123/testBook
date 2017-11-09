@@ -1,0 +1,593 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>App技术框架说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="apppei-zhi-yi-ji-qi-ta-fang-fa.html" />
+    
+    
+    <link rel="prev" href="gou-jian-gong-ju-pei-zhi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="jie-shao.html">
+            
+                <a href="jie-shao.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="xu-yao-kan-de-kuang-jia-wen-dang.html">
+            
+                <a href="xu-yao-kan-de-kuang-jia-wen-dang.html">
+            
+                    
+                    需要看的框架文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="an-zhuang.html">
+            
+                <a href="an-zhuang.html">
+            
+                    
+                    安装与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="kai-fa-huan-jing-yi-lai-mo-kuai-shuo-ming.html">
+            
+                <a href="kai-fa-huan-jing-yi-lai-mo-kuai-shuo-ming.html">
+            
+                    
+                    开发环境依赖模块说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="xiang-mu-mu-lu-shuo-ming.html">
+            
+                <a href="xiang-mu-mu-lu-shuo-ming.html">
+            
+                    
+                    项目目录说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="fa-bu-yun-xing.html">
+            
+                <a href="fa-bu-yun-xing.html">
+            
+                    
+                    发布运行程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="gou-jian-gong-ju-pei-zhi.html">
+            
+                <a href="gou-jian-gong-ju-pei-zhi.html">
+            
+                    
+                    构建工具配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="appji-zhu-kuang-jia-shuo-ming.html">
+            
+                <a href="appji-zhu-kuang-jia-shuo-ming.html">
+            
+                    
+                    App技术框架说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="apppei-zhi-yi-ji-qi-ta-fang-fa.html">
+            
+                <a href="apppei-zhi-yi-ji-qi-ta-fang-fa.html">
+            
+                    
+                    App配置以及其他方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="zu-jian-shuo-ming.html">
+            
+                <a href="zu-jian-shuo-ming.html">
+            
+                    
+                    组件说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="appye-wu-luo-ji-shuo-ming.html">
+            
+                <a href="appye-wu-luo-ji-shuo-ming.html">
+            
+                    
+                    App业务逻辑说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="appda-bao-ji-jie-kou-diao-yong.html">
+            
+                <a href="appda-bao-ji-jie-kou-diao-yong.html">
+            
+                    
+                    App打包及接口调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >App技术框架说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="app&#x6280;&#x672F;&#x6846;&#x67B6;&#x8BF4;&#x660E;">App&#x6280;&#x672F;&#x6846;&#x67B6;&#x8BF4;&#x660E;</h2>
+<h5 id="1-&#x9996;&#x9875;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF08;indexhtml&#xFF09;">1. &#x9996;&#x9875;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#xFF08;index.html&#xFF09;</h5>
+<p>app&#x7684;&#x5165;&#x53E3;&#x52A0;&#x8F7D;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x662F;app&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;&#x4E3B;&#x8981;&#x505A;app UI&#x7684;&#x521D;&#x59CB;&#x5316;&#x3001;VUE&#x7684;&#x521D;&#x59CB;&#x5316;&#x3001;app&#x7684;&#x5E38;&#x7528;JS&#x52A0;&#x8F7D;&#x3001;&#x4E1A;&#x52A1;&#x81EA;&#x52A8;&#x767B;&#x5F55;&#x7B49;</p>
+<pre><code>window.vm = new Vue({//vue&#x5B9E;&#x4F8B;
+    el: &apos;#app&apos;,    //vue &#x6302;&#x8F7D;&#x5BF9;&#x8C61;
+    mounted: function() {//&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;dom&#x52A0;&#x8F7D;&#x5B8C;&#x5168;&#x540E;&#x6267;&#x884C;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;
+        var vm = this;
+        mui.init({//mui &#x521D;&#x59CB;&#x5316;
+            preloadPages: [pageConfig[&apos;browser_main&apos;]] //&#x9884;&#x52A0;&#x8F7D;&#x5185;&#x7F6E;&#x6D4F;&#x89C8;&#x5668;
+        });
+        mui.plusReady(function() {//mui plus&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;
+            plus.runtime.getProperty(plus.runtime.appid, function(wgtinfo) {
+                localStorage.version = wgtinfo.version;
+            });
+            //&#x65E0;&#x7F51;&#x7EDC;&#x63D0;&#x793A;
+            document.addEventListener(&apos;netchange&apos;, function() {
+                var nt = plus.networkinfo.getCurrentType();
+                switch(nt) {
+                    case plus.networkinfo.CONNECTION_ETHERNET:
+                    case plus.networkinfo.CONNECTION_WIFI:
+                    case plus.networkinfo.CONNECTION_CELL2G:
+                    case plus.networkinfo.CONNECTION_CELL3G:
+                    case plus.networkinfo.CONNECTION_CELL4G:
+                        break;
+                    default:
+                        //&#x9632;&#x6B62;&#x591A;&#x4E2A;&#x51FA;&#x73B0;&#x8B66;&#x544A;
+                        if (!localStorage.alerting) {
+                            localStorage.alerting = &apos;true&apos;;
+                            mui.alert(vm.$t(&quot;index.noInter[0]&quot;), vm.$t(&quot;index.noInter[1]&quot;), vm.$t(&quot;index.noInter[2]&quot;), function() {
+                                localStorage.removeItem(&apos;alerting&apos;);
+                            });
+                        }
+                        break;
+                }
+            }, false);
+</code></pre><h5 id="2-&#x5355;&#x9875;&#x9762;&#xFF08;src&#x76EE;&#x5F55;&#x4E0B;&#x4F8B;&#xFF1A;loginhtml&#xFF09;">2. &#x5355;&#x9875;&#x9762;&#xFF08;src&#x76EE;&#x5F55;&#x4E0B;&#x4F8B;&#xFF1A;login.html&#xFF09;</h5>
+<pre><code>window.vm = new Vue({//vue&#x5B9E;&#x4F8B;
+    el: &apos;#app2&apos;,//vue &#x6302;&#x8F7D;&#x5BF9;&#x8C61;    
+    data: {//&#x6570;&#x636E;&#x53D8;&#x91CF;
+        lang: navigator.language.slice(0, 2),
+        showLogin: false,
+        userName: &apos;&apos;,
+        password: &apos;&apos;,
+        type: 3, //3&#x8868;&#x793A;&#x666E;&#x901A;&#x7528;&#x6237;&#xFF0C;2&#x8868;&#x793A;&#x7BA1;&#x7406;&#x5458;
+    },
+    mounted: function() {//&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;dom&#x52A0;&#x8F7D;&#x5B8C;&#x5168;&#x540E;&#x6267;&#x884C;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;
+        var _self = this;
+        window.addEventListener(&apos;pagebeforeshow&apos;, this.pageBeforeShow, false);
+
+        mui.init({});
+        mui.later(function() {
+            _self.showLogin = true;
+        }, 2000);
+        mui.plusReady(function() {
+            //&#x624B;&#x52A8;&#x5173;&#x95ED;&#x542F;&#x52A8;&#x9875;
+            plus.navigator.closeSplashscreen();
+            plus.navigator.setStatusBarBackground(&apos;#fff&apos;);
+            plus.navigator.setStatusBarStyle(&apos;dark&apos;);
+        });
+        //&#x4E00;&#x79D2;&#x5185;&#x8FDE;&#x7EED;&#x70B9;&#x51FB;&#x4E24;&#x6B21;&#xFF0C;&#x9000;&#x51FA;&#x5E94;&#x7528;&#xFF0C;&#x4EC5;&#x5B89;&#x5353;&#x6709;&#x6548;&#xFF1B;
+        mui.back = this._back;
+        window.addEventListener(&apos;fleetLogin&apos;, function(event) {
+            _self.fleetLogin(event.detail);
+        });
+        window.addEventListener(&apos;lastAutoLogin&apos;, function(event) {
+            var ll = JSON.parse(localStorage.lastLogin)
+            _self.autoLogin({mobile: ll.name, password: ll.pwd});
+        });
+        window.addEventListener(&apos;autoLogin&apos;, function(event) {
+            _self.autoLogin(event.detail);
+        });
+    },
+    computed: {//&#x8BA1;&#x7B97;&#x5C5E;&#x6027;
+        canLogin: function() {
+            return this.userName.trim().length &gt; 0 &amp;&amp; (this.password.trim().length &gt;= 6 || (this.type==2 &amp;&amp; this.password.trim().length &gt;= 1));
+        },
+    },
+    methods: {//&#x4E1A;&#x52A1;&#x65B9;&#x6CD5;
+        autoLogin: function(d) {
+            this.userName = d.mobile;
+            this.password = d.password;
+            this.login();
+        },
+        pageBeforeShow: function() {
+            this.userName = JSON.parse(localStorage.lastLogin||&apos;{}&apos;).name||&apos;&apos;;
+            localStorage.removeItem(&apos;userData&apos;);
+        },
+        login: function() {
+            var _self = this,
+                userName = _self.userName.trim(),
+                password = _self.password.trim(),
+                cid =&quot;&quot;;
+
+            if(!userName || !password) {
+                mui.toast(this.$t(&quot;login.notEmpty&quot;));
+                return;
+            }
+            //&#x82E5;&#x662F;&#x624B;&#x673A;&#x53F7;&#xFF0C;&#x4F20;&#x4E0A;&#x6B21;&#x7684;&#x8BBE;&#x5907;&#x53F7;&#x7ED9;&#x540E;&#x7AEF;&#xFF08;&#x7528;&#x4E8E;&#x540E;&#x7AEF;&#x786E;&#x5B9A;token&#xFF09;
+            if (app.Reg.IS_MOBILE.test(userName)) {
+                cid = localStorage[&quot;bind:&quot; + userName]||&apos;&apos;;
+            }
+            mui(&apos;#pw&apos;)[0].blur();
+            var loginData = {
+                name: _self.userName,
+                pwd: _self.password,
+                type: _self.type,
+                cid:cid,
+                packageName: localStorage.appId,
+            };
+            app.ajax({
+                url: app.api[&apos;login2&apos;],
+                data: loginData,
+                showWaiting: this.$t(&quot;login.waiting&quot;),
+                closeWaiting: false,
+                success: function(data, message) {
+                    app.closeWaiting();
+                    if (data.prompt == 1) {  //&#x8BBE;&#x5907;&#x53F7;&#x5DF2;&#x6FC0;&#x6D3B;&#x4F46;&#x624B;&#x673A;&#x53F7;&#x672A;&#x6CE8;&#x518C;&#x8FC7;
+                        mui.confirm(message, localStorage.appName, [_self.$t(&quot;login.goRegister[0]&quot;), _self.$t(&quot;login.goRegister[1]&quot;)], function(e) {
+                            if (e.index == 0) {
+                                mui.openWindow({url: &quot;../register/register.html?mobile=&quot;+(data.clink||&apos;&apos;)});
+                            } else {
+                                continueLogin();
+                            }
+                        })
+                    } else {
+                        continueLogin();
+                    }
+
+                    function continueLogin() {
+                        _self.logins = data;
+                        localStorage.lastLogin = JSON.stringify(loginData);
+                        _self.password = &apos;&apos;;
+
+                        if(!data.device) {  //&#x7BA1;&#x7406;&#x5458;
+                            app.closeWaiting();
+                            localStorage.adminToken = data[&apos;access_token&apos;];
+                            vm.openWindow(pageConfig[&apos;device-list&apos;]);
+                            return;
+                        }
+
+                        if (data.contents == &apos;4&apos;) {
+                            localStorage.activateToken = data[&apos;access_token&apos;];
+                            app.closeWaiting();
+                            mui.alert(_self.$t(&quot;login.goActivate[0]&quot;), &apos;&apos;, _self.$t(&quot;login.goActivate[1]&quot;), function(e) {
+                                if (e.index == 0)
+                                    vm.openWindow({url: &apos;../activate/activate.html&apos;, styles: {top: 0}});
+                            });
+                        } else {
+                            _self.userLogin(data);
+                        }
+                    }
+                },
+                error: function() {
+                    app.closeWaiting();
+                }
+            });
+
+        },
+        fleetLogin: function(item) {
+            localStorage.setItem(&apos;token&apos;, localStorage.adminToken);
+            localStorage.setItem(&apos;user&apos;, new User(item.cid, &quot;admin&quot;, item.clink));
+            app.ajax({
+                url: app.api.decideGetPush,
+                data: {cid: item.cid},
+                success: function() {}
+            });
+            mui.openWindow(pageConfig[&apos;main&apos;]);
+        },
+        findPassword: function() {
+            vm.openWindow(pageConfig[&apos;find-password&apos;]);
+        },
+        switchToggle: function(event) {
+            this.type = event.detail.isActive ? 2 : 3;
+        },
+        userLogin: function(data) {
+            //&#x5237;&#x65B0;&#x624B;&#x673A;&#x53F7;&#x7ED1;&#x5B9A;&#x7684;&#x6700;&#x65B0;&#x767B;&#x5F55;&#x8BBE;&#x5907;&#xFF0C;&#x7528;&#x4E8E;&#x624B;&#x673A;&#x53F7;&#x767B;&#x5F55;
+            localStorage.setItem(&quot;bind:&quot; + data.ctel, data.device[0]);
+            localStorage.token = data[&apos;access_token&apos;];
+            var u = new User(data.device[0], &apos;normal&apos;, data.clink);
+            localStorage.user = JSON.stringify(u);
+            mui.openWindow(pageConfig[&apos;main&apos;]);
+        },
+        _back: function() {
+            var self = this;
+            if(!self.firstTime) {
+                self.firstTime = new Date().getTime();
+                plus.nativeUI.toast(this.$t(&quot;login.doubleExit&quot;));
+                setTimeout(function() {
+                    self.firstTime = null;
+                }, 1000);
+            } else {
+                if(new Date().getTime() - self.firstTime &lt; 1000) {
+                    var main = plus.android.runtimeMainActivity();
+                    main.moveTaskToBack(false);
+                }
+            }
+        }
+    }
+});
+</code></pre><h5 id="3-app&#x6253;&#x5305;&#x914D;&#x7F6E;&#xFF08;manifestjson&#xFF09;">3. app&#x6253;&#x5305;&#x914D;&#x7F6E;&#xFF08;manifest.json&#xFF09;</h5>
+<p>app&#x6253;&#x5305;&#x914D;&#x7F6E;&#x7684;&#x5E94;&#x7528;&#x540D;&#x79F0;&#xFF0C;appid&#xFF0C;&#x6A2A;&#x7AD6;&#x5C4F;&#x7B49;</p>
+<p><img src="http://osk1hpe2y.bkt.clouddn.com/17-11-9/78267342.jpg" alt="&#x56FE;&#x7247;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gou-jian-gong-ju-pei-zhi.html" class="navigation navigation-prev " aria-label="Previous page: 构建工具配置说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="apppei-zhi-yi-ji-qi-ta-fang-fa.html" class="navigation navigation-next " aria-label="Next page: App配置以及其他方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"App技术框架说明","level":"1.7","depth":1,"next":{"title":"App配置以及其他方法","level":"1.8","depth":1,"path":"apppei-zhi-yi-ji-qi-ta-fang-fa.md","ref":"apppei-zhi-yi-ji-qi-ta-fang-fa.md","articles":[]},"previous":{"title":"构建工具配置说明","level":"1.6","depth":1,"path":"gou-jian-gong-ju-pei-zhi.md","ref":"gou-jian-gong-ju-pei-zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appji-zhu-kuang-jia-shuo-ming.md","mtime":"2017-11-08T11:59:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-09T06:22:27.767Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
