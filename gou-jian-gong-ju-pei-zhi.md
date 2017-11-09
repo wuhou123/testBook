@@ -1,5 +1,5 @@
 ## gulpfile.js 配置说明
-
+gulp工具配置，自动执行打包压缩代码等命令
 
 ```
 var autoprefixer = require('autoprefixer'),
