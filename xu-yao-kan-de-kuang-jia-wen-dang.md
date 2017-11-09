@@ -6,6 +6,6 @@
 >
 > 3. dcloud的html5+文档[文档地址](http://www.html5plus.org/doc/h5p.html/)
 >
-> 4. eclipse本地打包app流程[文档地址](http://ask.dcloud.net.cn/article/38/)
+> 4. eclipse本地打包app流程[文档地址](http://ask.dcloud.net.cn/article/38)
 >
 
