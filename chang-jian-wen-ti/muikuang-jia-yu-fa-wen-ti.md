@@ -1,11 +1,12 @@
-   1.mui移动端click事件使用tap（避免延迟），不是原生click，如：
+1.mui移动端click事件使用tap（避免延迟），不是原生click，如：
 
-> ```
 > import Vue from 'vue'
-> <div @tap='submit'>submit</div>
-> ```
+>     <div @tap='submit'>submit</div>
+>     ```
 
-    2.a标签链接跳转无法点击跳转：
+```
+2.a标签链接跳转无法点击跳转：
+```
 
 > mui使用的时候会将所有的a标签的href屏蔽，跳转页面使用mui.openWindow\({}\),如：
 >
@@ -41,7 +42,9 @@
 > })
 > ```
 
-    3.页面上下拖动，页面超出不出现滚动条，无法拖动：
+```
+3.页面上下拖动，页面超出不出现滚动条，无法拖动：
+```
 
 > 页面内容续写在mui-scroll-wrapper的mui-scroll下，如：
 >
@@ -53,7 +56,10 @@
 > </div>
 > ```
 
-      4.Uncaught ReferenceError: plus is not defined:  
+```
+  4.Uncaught ReferenceError: plus is not defined:  
+```
+
 调用plus对象需在初始化完成后调用，方法写在mui.plusReady\({}\)下，示例：
 
 > ```
@@ -66,15 +72,21 @@
 > }
 > ```
 
-     5.页面被导航头部遮挡：
+```
+ 5.页面被导航头部遮挡：
+```
 
 > 除了固定栏之外，其它内容都要包裹在.mui-content中，否则就有可能被固定栏遮罩
 
-      6.使用mui插件无效：
+```
+  6.使用mui插件无效：
+```
 
 > mui插件初始化执行mui.init\(\)
 
-      7.Uncaught ReferenceError: mui is not defined:
+```
+  7.Uncaught ReferenceError: mui is not defined:
+```
 
 > 查看是否引入了mui.js文件
 >
