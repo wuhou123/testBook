@@ -7,7 +7,7 @@
 ```
 
 2.gulp dev报错throw error：
-> 查看代码语法是否有误，需修改代码后重新gulp dev
+> 查看代码语法是否有误，需修改代码后重新命令行执行gulp dev
 
 
 
