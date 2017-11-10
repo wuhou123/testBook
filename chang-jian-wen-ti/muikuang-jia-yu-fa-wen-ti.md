@@ -1,6 +1,7 @@
 > 1.mui移动端click事件使用tap（避免延迟），不是原生click，如：
 >
 > ```
+> import Vue from 'vue'
 > <div @tap='submit'>submit</div>
 > ```
 
@@ -37,7 +38,7 @@
 >         ......
 >       }
 >     }
-> })
+> })  
 > ```
 
 > 3.页面上下拖动，页面超出不出现滚动条，无法拖动：
@@ -51,6 +52,21 @@
 > </div>
 > </div>
 > ```
+
+> 4.plus is undefined:  
+> 调用plus对象需在初始化完成后调用，方法写在mui.plusReady\({}\)下，示例：
+>
+> ```
+>   mui.plusReady(function(){
+>     //关闭等待框
+>     plus.nativeUI.closeWaiting();
+>     //显示当前页面
+>     mui.currentWebview.show();
+>   });
+> }
+> ```
+
+> 5.
 
 
 
