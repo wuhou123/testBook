@@ -4,10 +4,8 @@
  npm config set registry https://registry.npm.taobao.org
  //后面执行cnpm install
  cnpm install 
- 
 ```
-2.gulp dev报错：
-页面语法问题
+
 
 
 
