@@ -13,4 +13,7 @@
 * [组件说明](zu-jian-shuo-ming.md)
 * [App业务逻辑说明](appye-wu-luo-ji-shuo-ming.md)
 * [App打包及接口调用](appda-bao-ji-jie-kou-diao-yong.md)
+* [常见问题](chang-jian-wen-ti.md)
+  * [mui框架语法问题](chang-jian-wen-ti/muikuang-jia-yu-fa-wen-ti.md)
+  * [其他问题](chang-jian-wen-ti/qi-ta-wen-ti.md)
 
