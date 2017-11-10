@@ -6,8 +6,8 @@
  cnpm install 
  
 ```
-
-2.gulp baocuo 
+2.gulp dev报错：
+页面语法问题
 
 
 
