@@ -76,7 +76,6 @@
   7.Uncaught ReferenceError: mui is not defined:
 
 > 查看是否引入了mui.js文件
->&lt;script src="mui.js"&gt;&lt;/script&gt;
 
 
 
